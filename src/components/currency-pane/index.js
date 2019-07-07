@@ -4,6 +4,7 @@ import CurrencySelector from '../currency-selector';
 export default class CurrencyPane extends Component {
 
 	onAmountChange = (e) => {
+		console.log('e', e)
 		const value = e.target.value,
 			oldValue = this.props.amount;
 		if (!value || value.match(/^\d+(?:(\.|,)\d{0,2})?$/)) {

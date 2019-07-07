@@ -1,14 +1,17 @@
-import { h } from "preact";
-import render from "preact-render-to-string";
-//import { shallow } from "enzyme";
+import { h } from 'preact';
+import { shallow } from 'enzyme';
+import { expect } from 'chai';
 
 import App from './App';
 import CurrencyPane from './currency-pane';
 
+describe('App suite', () => {
+	it('renders without crashing', () => {
+		shallow(<App />);
+	});
 
-it('renders without crashing', () => {
-	//const wrapper = shallow(<App/>);
-	const wrapper = render(<App/>);
-	expect(wrapper.find(CurrencyPane).length).toEqual(2);
+	it('has app class', () => {
+		const wrapper = shallow(<App />);
+		//console.log('.html()', wrapper.html(), '?', App)
+	});
 });
-
