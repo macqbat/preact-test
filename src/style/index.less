@@ -1,0 +1,121 @@
+html, body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #767A7F;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.app {
+	margin: 5px auto;
+	background: #FAFAFA;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 3px 9px rgba(0,0,0,0.2);
+	overflow: hidden;
+	.top, .bottom{
+		display: flex;
+		flex-direction: column;
+		padding: 2em;
+		.top-line{
+			display: flex;
+			flex-direction: row;
+			flex: 1;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 550px;
+			.currency{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+			label, h2, input{
+				margin: 0 20px 0 0;
+			}
+			h2{
+				font-size: 2em;
+			}
+			input{
+				border: 0px none;
+				outline: none;
+				text-align: right;
+				font-size: 2em;
+				max-width: 150px;
+			}
+		}
+		.saldo{
+			font-size: 0.8em;
+			color: #93939d;
+			display: flex;
+			justify-content: space-between;
+		}
+		button{
+			min-width: 150px;
+			max-width: 350px;
+			width: 90%;
+			margin: 30px auto 0 auto;
+			padding: 1em;
+			border: 0px none;
+			outline: none;
+			background: #eb008e;
+			color: #fff;
+			border-radius: 15px;
+			cursor: pointer;
+			&.disabled{
+				cursor: not-allowed;
+				opacity: 0.3;
+			}
+		}
+	}
+	.bottom{
+		background: #f3f4f8;
+		padding-top: 4em;
+		.top-line{
+			input{
+				background: #f3f4f8;
+			}
+		}
+	}
+	.top{
+		padding-bottom: 3.5em;
+	}
+	.middle{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: left ;
+		padding: 0 0 0 2em;
+		color: #276eac;
+		margin-bottom: -1.4em;
+		button {
+			border: 2px solid #f5f5f5;
+			background: #fff;
+			border-radius: 50%;
+			padding: 0.7em;
+			color: #276eac;
+			font-weight: 900;
+			font-size: 1em;
+			margin-right: 25px;
+			outline: none;
+			cursor: pointer;
+			align-self: flex-start;
+			margin-bottom: -2.8em;
+		}
+		.crossRate{
+			border: 2px solid #f5f5f5;
+			background: #fff;
+			border-radius: 1em;
+			padding: 0.7em;
+			margin: auto;
+		}
+	}
+}
+
