@@ -29,7 +29,7 @@
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "microbundle": "^0.6.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "preact-cli": "^2.0.2",
     "preact-compat-enzyme": "^0.2.5",
     "preact-render-to-string": "^3.7.0",
